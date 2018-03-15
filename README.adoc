@@ -7,7 +7,7 @@ java 8 new feature learning
 * 函数式接口的使用
 
 == topic1
-link:src/com/java8/features/feature1/topic1[函数式接口的定义]  : 
+link:src/com/java8/features/feature1/topic1[函数式接口的定义] : 
 
 - 注解：@FunctionalInterface
 - 函数式接口不允许是空接口,也不允许只有默认方法和静态方法
@@ -17,7 +17,7 @@ link:src/com/java8/features/feature1/topic1[函数式接口的定义]  :
 - 可以有多个静态方法，静态方法必须要有方法体,静态方法只能通过接口调用
 
 == topic2
-函数式接口的使用
+link:src/com/java8/features/feature1/topic2[函数式接口的使用] :
 
 - 实现类必须重写接口的抽象方法
 - 如果实现类实现了多个函数式接口，也必须重写全部接口的抽象方法
