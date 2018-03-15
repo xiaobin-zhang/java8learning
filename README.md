@@ -1,13 +1,24 @@
 # java8learning
 java 8 new feature learning
 
-- [函数式接口](https://github.com/xiaobin-zhang/java8learning/raw/master/src/com/java8/features/feature1/F1Topic1.java)
-- 默认方法
-- Lambda表达式
-- 方法引用
-- Stream
-- Optional类
-- 日期Api
-- Base64
-- Nashorn(JavaScript引擎)
+### Table of Contents
+* [函数式接口的定义](#topic1)
+* [函数式接口的使用](#topic2)
+
+### topic1
+函数式接口的定义 : 
+
+- 注解：@FunctionalInterface
+- 函数式接口不允许是空接口,也不允许只有默认方法和静态方法
+- 如果有抽象方法，则只能有一个抽象方法
+- 抽象方法和普通方法在函数式接口中不允许共存
+- 可以有多个默认方法，默认方法必须要有方法体
+- 可以有多个静态方法，静态方法必须要有方法体,静态方法只能通过接口调用
+
+### topic2
+函数式接口的使用
+
+- 实现类必须重写接口的抽象方法
+- 如果实现类实现了多个函数式接口，也必须重写全部接口的抽象方法
+- 如果多个函数式接口中存在相同的默认方法，则必须重写该默认方法，在重写默认方法是，可以指定使用哪个接口中的方法，也可以全部不用，完全重写
 

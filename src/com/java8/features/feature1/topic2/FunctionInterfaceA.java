@@ -1,17 +1,24 @@
-package com.java8.features.feature2;
+package com.java8.features.feature1.topic2;
 
 /**
- * 接口中可以定义默认方法和静态方法。
+ * 函数式接口A
  * @author zhangxiaobin
  *
  */
-public interface DefaultInterfaceA {
+@FunctionalInterface
+public interface FunctionInterfaceA {
+	
+	abstract void abstractMet();
 
 	default void defaultMethod1() {
 		System.out.println("DfInAM1");
 	}
 	
 	default void defaultMethod2() {
+		System.out.println("DfInAM2");
+	}
+	
+	default void defaultMethod3() {
 		System.out.println("DfInAM2");
 	}
 	

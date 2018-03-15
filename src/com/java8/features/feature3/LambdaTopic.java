@@ -1,5 +1,9 @@
 package com.java8.features.feature3;
 
+import java.util.function.Consumer;
+
+import com.java8.domain.User;
+
 /**
  * Lambda表达式.
  * @author zhangxiaobin
@@ -7,7 +11,12 @@ package com.java8.features.feature3;
  */
 public class LambdaTopic {
 
-	public void topic1() {
-		
+	public static void topic1() {
+		Consumer<User> u = User::getAge;
+		System.out.println(u);
+	}
+	
+	public static void main(String[] args) {
+		topic1();
 	}
 }
