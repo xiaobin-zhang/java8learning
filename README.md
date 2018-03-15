@@ -5,7 +5,7 @@ java 8 new feature learning
 * [函数式接口的定义](#topic1)
 * [函数式接口的使用](#topic2)
 
-### topic1
+### link:topic1[feature1/topic1] 
 函数式接口的定义 : 
 
 - 注解：@FunctionalInterface
