@@ -3,6 +3,7 @@ package com.java8.features.feature4;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Stream;
 
 /**
@@ -59,6 +60,11 @@ public class StreamTopic1 {
 		return sorted;
 	}
 	
+	public static void generateUuid() {
+		Stream<String> uuidStream = Stream.generate(() -> UUID.randomUUID().toString());
+		uuidStream.forEach(System.out::println);
+	}
+	
 	public static void main(String[] args) {
 		List<Integer> list = Arrays.asList(1,2,3,4,5,6);
 		generateStream(list);
@@ -78,6 +84,5 @@ public class StreamTopic1 {
 		
 		forEachStream(filterStream(generateStream(list)));
 		forEachStream(filterStream(generateParStream(list)));
-		
 	}
 }
