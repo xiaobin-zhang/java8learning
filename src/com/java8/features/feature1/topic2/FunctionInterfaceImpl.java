@@ -38,5 +38,9 @@ public class FunctionInterfaceImpl implements FunctionInterfaceA, FunctionInterf
 	public void abstractMetC() {
 		System.out.println("impl class abstractMet c");
 	}
+	
+	public void staticMet() {
+		FunctionInterfaceA.staticMethod();
+	}
 
 }

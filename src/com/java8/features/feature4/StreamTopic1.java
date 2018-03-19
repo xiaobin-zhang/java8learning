@@ -12,7 +12,7 @@ import java.util.stream.Stream;
  *
  */
 public class StreamTopic1 {
-
+	
 	//为集合创建串行流
 	public static Stream<Integer> generateStream(List<Integer> list) {
 		Stream<Integer> stream = list.stream();
@@ -63,6 +63,8 @@ public class StreamTopic1 {
 	public static void generateUuid() {
 		Stream<String> uuidStream = Stream.generate(() -> UUID.randomUUID().toString());
 		uuidStream.forEach(System.out::println);
+		Stream<String> of = Stream.of(UUID.randomUUID().toString());
+		of.forEach(System.out::println);
 	}
 	
 	public static void main(String[] args) {

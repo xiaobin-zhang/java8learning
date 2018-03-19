@@ -13,7 +13,7 @@ import com.java8.domain.User;
  * @author zhangxiaobin
  *
  */
-public class LambdaTopic {
+public class LambdaTopic2 {
 	
 	/**
 	 * 不使用java8的一般方法

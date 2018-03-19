@@ -7,6 +7,7 @@ import java.util.Set;
 
 public class User {
 
+	private int id;
 	private String name;
 	private int age;
 	private String sex;
@@ -64,9 +65,8 @@ public class User {
 	
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", age=" + age + ", sex=" + sex + ", hobbys=" + hobbys + "]";
+		return "User [id=" + id + ", name=" + name + ", age=" + age + ", sex=" + sex + ", hobbys=" + hobbys + "]";
 	}
-	
 	@Override
 	public boolean equals(Object obj) {
 		boolean isEquals = false;
@@ -86,6 +86,21 @@ public class User {
 		result = result * 31 + this.name.hashCode();
 		result = result * 31 + this.sex.hashCode();
 		return result;
+	}
+	
+	/**
+	 * 静态方法
+	 */
+	public static void staticMet() {
+		System.out.println("User's static method");
+	}
+	
+	/**
+	 * 普通有参方法
+	 * @param user
+	 */
+	public static void staticMet_2(User user) {
+		System.out.println(user);
 	}
 	
 }
